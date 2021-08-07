@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 
- const Agancy = () => {
+const Agancy = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,17 +11,11 @@ import styles from '../../styles/Home.module.css'
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          test studio
-        </h1>
+        <h1 className={styles.title}>test studio</h1>
 
-        <p className={styles.description}>
-          クオリティの高い野球用品をご提供します。
-        </p>
+        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
 
-        <div className={styles.grid}>
-          aaaa
-        </div>
+        <div className={styles.grid}>aaaa</div>
       </main>
 
       <footer className={styles.footer}>
