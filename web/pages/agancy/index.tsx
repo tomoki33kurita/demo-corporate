@@ -11,9 +11,9 @@ const Agancy = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>test studio</h1>
+        <h1 className={styles.title}>お取り扱い店一覧</h1>
 
-        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+        <p className={styles.description}>お取り扱い店一覧を表示します</p>
 
         <div className={styles.grid}>aaaa</div>
       </main>

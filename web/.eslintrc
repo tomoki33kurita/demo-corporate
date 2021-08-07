@@ -1,9 +1,18 @@
 {
   "root": true,
-  "env" : {
+  "plugins": ["@typescript-eslint", "import", "prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
     "browser": true,
+    "node": true,
     "es6": true
-  } ,
-  "extends": ["eslint:recommended", "prettier"]
-  // "extends": ["next", "next/core-web-vitals"]
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ]
 }

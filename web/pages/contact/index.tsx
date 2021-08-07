@@ -11,9 +11,9 @@ const Contact = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>test studio</h1>
+        <h1 className={styles.title}>お問い合わせ</h1>
 
-        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+        <p className={styles.description}>お問い合わせフォームを設置する</p>
 
         <div className={styles.grid}>aaaa</div>
       </main>

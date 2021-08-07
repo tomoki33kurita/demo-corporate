@@ -11,9 +11,9 @@ const About = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>test studio</h1>
+        <h1 className={styles.title}>会社概要</h1>
 
-        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+        <p className={styles.description}>会社概要について、ご説明するページ</p>
 
         <div className={styles.grid}>aaaa</div>
       </main>

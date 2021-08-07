@@ -11,9 +11,9 @@ const Product = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>test studio</h1>
+        <h1 className={styles.title}>製品ページ</h1>
 
-        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+        <p className={styles.description}>製品の一覧、特徴等を表示する想定</p>
 
         <div className={styles.grid}>aaaa</div>
       </main>
