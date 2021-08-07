@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
+import styles from '../../styles/Home.module.css'
 
- const Home = () => {
+ const Agancy = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,33 +20,7 @@ import Link from 'next/link'
         </p>
 
         <div className={styles.grid}>
-          <Link href="/product" >
-            <a className={styles.card}>
-              <h2>製品ラインナップへ</h2>
-              <p></p>
-            </a>
-          </Link>
-
-          <Link href="/agancy">
-            <a className={styles.card}>
-              <h2>お取扱店一覧</h2>
-              <p></p>
-            </a>
-          </Link>
-
-          <Link href="/about">
-          <a className={styles.card}>
-            <h2>会社概要</h2>
-            <p></p>
-          </a>
-          </Link>
-
-          <Link href="/contact">
-          <a className={styles.card}>
-            <h2>お問い合わせ</h2>
-            <p></p>
-          </a>
-          </Link>
+          aaaa
         </div>
       </main>
 
@@ -64,4 +37,4 @@ import Link from 'next/link'
   )
 }
 
-export default Home
+export default Agancy
