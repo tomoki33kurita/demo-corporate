@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 
-const Product = () => {
+const Product: React.VFC = () => {
   return (
     <div className={styles.container}>
       <Head>

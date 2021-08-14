@@ -1,5 +1,5 @@
 {
-  "root": true,
+  "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "import", "prettier"],
   "parserOptions": {
     "sourceType": "module"
@@ -13,6 +13,6 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint"
+    "prettier"
   ]
 }

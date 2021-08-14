@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
- const Home = () => {
+const Home: React.VFC = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,16 +12,12 @@ import Link from 'next/link'
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          test studio
-        </h1>
+        <h1 className={styles.title}>test studio</h1>
 
-        <p className={styles.description}>
-          クオリティの高い野球用品をご提供します。
-        </p>
+        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
 
         <div className={styles.grid}>
-          <Link href="/product" >
+          <Link href="/product">
             <a className={styles.card}>
               <h2>製品ラインナップへ</h2>
               <p></p>
@@ -36,17 +32,17 @@ import Link from 'next/link'
           </Link>
 
           <Link href="/about">
-          <a className={styles.card}>
-            <h2>会社概要</h2>
-            <p></p>
-          </a>
+            <a className={styles.card}>
+              <h2>会社概要</h2>
+              <p></p>
+            </a>
           </Link>
 
           <Link href="/contact">
-          <a className={styles.card}>
-            <h2>お問い合わせ</h2>
-            <p></p>
-          </a>
+            <a className={styles.card}>
+              <h2>お問い合わせ</h2>
+              <p></p>
+            </a>
           </Link>
         </div>
       </main>
