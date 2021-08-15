@@ -12,7 +12,7 @@ const Home: React.VFC = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>i studio</h1>
+        <h1 className={'text-blue-800'}>i studio</h1>
 
         <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
 
