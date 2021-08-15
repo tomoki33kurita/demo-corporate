@@ -24,7 +24,7 @@ const Agancy: React.VFC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Copryright © Test Studio Inc. All Rights Reserved.
+          Copryright © i studio Inc. All Rights Reserved.
         </a>
       </footer>
     </div>
