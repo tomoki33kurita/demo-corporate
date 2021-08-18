@@ -4,15 +4,13 @@ import Link from 'next/link'
 const Home: React.VFC = () => {
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={'text-5xl text-yellow-400'}>i studio</h1>
-
-        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+      <main>
+        <p className={'my-10 ml-10'}>クオリティの高い野球用品をご提供します。</p>
 
         <div className={styles.grid}>
           <Link href="/products">
             <a className={styles.card}>
-              <h2>製品ラインナップへ</h2>
+              <h2>製品ラインナップ</h2>
               <p></p>
             </a>
           </Link>

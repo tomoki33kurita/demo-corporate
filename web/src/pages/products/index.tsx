@@ -1,17 +1,37 @@
+import SubHeader from '../../components/organisms/subHeader'
+import ProductCard from '../../containers/products/productCard'
 import styles from '../../styles/Home.module.css'
 
 const Product: React.VFC = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>製品ページ</h1>
-
-        <p className={styles.description}>製品の一覧、特徴等を表示する想定</p>
-
-        <div className={styles.grid}>aaaa</div>
+        <SubHeader pageTitle={'製品ラインナップ'} />
+        <div className={'m-5 flex justify-between '}>
+          <ProductCard product={products[0]} />
+          <ProductCard product={products[0]} />
+        </div>
+        <div className={'m-5  flex justify-between'}>
+          <ProductCard product={products[0]} />
+          <ProductCard product={products[0]} />
+        </div>
+        <div className={'m-5  flex justify-between'}>
+          <ProductCard product={products[0]} />
+          <ProductCard product={products[0]} />
+        </div>
       </main>
     </div>
   )
 }
+
+const products = [
+  {
+    model: '2B004',
+    imageUrl: '/2b004.png',
+    discription: `小ぶりなグラブになっており、ヒンジを手口部分に近くしいいているため小指が聞きやすくなっています。
+ウェブはポケット部を編み込みにし、深く破れにくい設計にしています。
+横振り縦振り両タイプに万能なグラブです。`
+  }
+]
 
 export default Product

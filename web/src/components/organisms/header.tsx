@@ -15,7 +15,7 @@ const Header: React.VFC = () => {
             <ul className={'flex'}>
               <li className={'p-4'}>
                 <Link href="/products">
-                  <a>製品一覧</a>
+                  <a>製品ラインナップ</a>
                 </Link>
               </li>
               <li className={'p-4'}>
