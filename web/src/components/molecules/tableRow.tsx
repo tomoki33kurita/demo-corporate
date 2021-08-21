@@ -2,10 +2,11 @@
 
 import TableHead from './../atoms/tableHead'
 import TableData from './../atoms/tableData'
+import { ReactNode } from 'react'
 
 type Props = {
   head: string | number
-  data: string | number
+  data: string | number | ReactNode
 }
 
 const TableRow: React.VFC<Props> = ({ head, data }) => {
