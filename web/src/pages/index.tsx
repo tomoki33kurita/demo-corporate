@@ -7,6 +7,8 @@ const Home: React.VFC = () => {
       <main>
         <p className={'my-10 ml-10'}>クオリティの高い野球用品をご提供します。</p>
 
+        <p className={styles.description}>クオリティの高い野球用品をご提供します。</p>
+
         <div className={styles.grid}>
           <Link href="/products">
             <a className={styles.card}>
