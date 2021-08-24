@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Heading } from '@chakra-ui/react'
 
 type Props = {
   pageTitle: string
@@ -6,11 +7,11 @@ type Props = {
 
 const SubHeader: React.VFC<Props> = ({ pageTitle }) => {
   return (
-    <div className={'h-30 p-4 bg-yellow-100'}>
-      <div className={'flex w-full  justify-between'}>
-        <h2 className={'p-4'}>{pageTitle}</h2>
-      </div>
-    </div>
+    <Box background={'yellow.200'} p={4}>
+      <Heading as={'h2'} size={'md'} p={2}>
+        {pageTitle}
+      </Heading>
+    </Box>
   )
 }
 

@@ -1,7 +1,12 @@
-// import styles from '../../styles/Home.module.css'
+import React from 'react'
+import { Td } from '@chakra-ui/react'
 
 const TableData: React.FC = ({ children }) => {
-  return <td className={'p-5 border-2'}>{children}</td>
+  return (
+    <Td padding={5} style={{ border: 'solid 2px #E2E8F0' }}>
+      {children}
+    </Td>
+  )
 }
 
 export default TableData

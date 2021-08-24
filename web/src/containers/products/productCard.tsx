@@ -1,3 +1,6 @@
+import React from 'react'
+import { Box, Text, Flex, Image } from '@chakra-ui/react'
+
 type Props = {
   product: {
     model: string
@@ -9,19 +12,23 @@ type Props = {
 const ProductCard: React.VFC<Props> = ({ product }) => {
   const { model, imageUrl, discription } = product
   return (
-    <div className={'mb-10 border-4'}>
-      <p className={'py-5 px-10 '}>型番号：{model}</p>
-      <img src={imageUrl} />
-      <p className={'py-5 px-10 '}>{discription}</p>
-      <div className={'flex mb-5 ml-10'}>
-        <p>長さ約27cm</p>
-        <div className={'flex ml-5'}>
-          <p>Color：</p>
-          <p>ブラック, </p>
-          <p>オレンジ</p>
-        </div>
-      </div>
-    </div>
+    <Box border={'1px'} marginBottom={10}>
+      <Text paddingY={5} paddingX={10}>
+        型番号：{model}
+      </Text>
+      <Image src={imageUrl} alt={model} />
+      <Text paddingY={5} paddingX={10}>
+        {discription}
+      </Text>
+      <Flex marginBottom={5} marginLeft={10}>
+        <Text>長さ約27cm</Text>
+        <Flex marginLeft={5}>
+          <Text>Color：</Text>
+          <Text>ブラック,</Text>
+          <Text>オレンジ</Text>
+        </Flex>
+      </Flex>
+    </Box>
   )
 }
 
