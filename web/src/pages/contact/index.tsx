@@ -11,11 +11,32 @@ const Contact: React.VFC = () => {
           <form>
             <table>
               <tbody>
-                <TableRow head={'お名前'} data={<input style={{ border: 'solid 1px #ccc' }} />} />
-                <TableRow head={'ふりがな'} data={<input style={{ border: 'solid 1px #ccc' }} />} />
+                <TableRow
+                  head={'お名前'}
+                  data={
+                    <input
+                      className={'p-1'}
+                      style={{ border: 'solid 1px #ccc', minWidth: '300px' }}
+                    />
+                  }
+                />
+                <TableRow
+                  head={'ふりがな'}
+                  data={
+                    <input
+                      className={'p-1'}
+                      style={{ border: 'solid 1px #ccc', minWidth: '300px' }}
+                    />
+                  }
+                />
                 <TableRow
                   head={'メールアドレス'}
-                  data={<input style={{ border: 'solid 1px #ccc' }} />}
+                  data={
+                    <input
+                      className={'p-1'}
+                      style={{ border: 'solid 1px #ccc', minWidth: '300px' }}
+                    />
+                  }
                 />
                 <TableRow
                   head={'お問い合わせ内容'}
