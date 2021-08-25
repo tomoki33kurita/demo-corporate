@@ -26,13 +26,15 @@ const AgancyCard: React.VFC<Props> = ({ agancy }) => {
       <Heading size="md" marginBottom={3} fontWeight={'bold'}>
         {shopName}
       </Heading>
-      <Text>住所：{address}</Text>
-      <Text>TEL：{phone}</Text>
-      <Text>取扱内容：{content}</Text>
+      <Text ml={3}>住所：{address}</Text>
+      <Text ml={3}>TEL：{phone}</Text>
+      <Text ml={3}>取扱内容：{content}</Text>
       {link && (
-        <Link href={link}>
-          <A color={'yellow.500'}>{link}</A>
-        </Link>
+        <Text ml={3}>
+          <Link href={link}>
+            <A color={'yellow.500'}>{link}</A>
+          </Link>
+        </Text>
       )}
     </Box>
   )
