@@ -12,12 +12,12 @@ type Props = {
 const ProductCard: React.VFC<Props> = ({ product }) => {
   const { model, imageUrl, discription } = product
   return (
-    <Box border={'1px'} marginBottom={10}>
+    <Box m={3} border={'1px'} borderColor={'gray.300'} borderRadius={'md'}>
       <Text paddingY={5} paddingX={10}>
         型番号：{model}
       </Text>
       <Image src={imageUrl} alt={model} />
-      <Text paddingY={5} paddingX={10}>
+      <Text paddingY={3} paddingX={5}>
         {discription}
       </Text>
       <Flex marginBottom={5} marginLeft={10}>

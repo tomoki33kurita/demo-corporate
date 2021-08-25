@@ -4,7 +4,7 @@ import { DrawerMenu } from './DrawerMenu'
 import { useMediaQuery } from '@chakra-ui/media-query'
 
 const Header: React.VFC = () => {
-  const [isMobile] = useMediaQuery('(max-width:480px )')
+  const [isMobile] = useMediaQuery('(max-width:768px )')
   return (
     <header className={'h-20 p-4 bg-yellow-300	'}>
       {isMobile ? (

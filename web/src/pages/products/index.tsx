@@ -1,26 +1,32 @@
 import SubHeader from '../../components/organisms/subHeader'
 import ProductCard from '../../containers/products/productCard'
-import styles from '../../styles/Home.module.css'
+import { Box, Grid, GridItem } from '@chakra-ui/react'
 
 const Product: React.VFC = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <SubHeader title={'製品ラインナップ'} />
-        <div className={'m-5 flex justify-between '}>
+    <Box>
+      <SubHeader title={'製品ラインナップ'} />
+      <Grid templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}>
+        <GridItem>
           <ProductCard product={products[0]} />
+        </GridItem>
+        <GridItem>
           <ProductCard product={products[0]} />
-        </div>
-        <div className={'m-5  flex justify-between'}>
+        </GridItem>
+        <GridItem>
           <ProductCard product={products[0]} />
+        </GridItem>
+        <GridItem>
           <ProductCard product={products[0]} />
-        </div>
-        <div className={'m-5  flex justify-between'}>
+        </GridItem>
+        <GridItem>
           <ProductCard product={products[0]} />
+        </GridItem>
+        <GridItem>
           <ProductCard product={products[0]} />
-        </div>
-      </main>
-    </div>
+        </GridItem>
+      </Grid>
+    </Box>
   )
 }
 
