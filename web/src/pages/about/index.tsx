@@ -6,10 +6,7 @@ import { Box, Flex, Heading, Table, Tbody } from '@chakra-ui/react'
 const About: React.VFC = () => {
   return (
     <Box minHeight={'100vh'}>
-      <SubHeader pageTitle={'会社概要'} />
-      <Flex justify={'center'} marginY={5}>
-        <Heading size={'md'}>会社概要</Heading>
-      </Flex>
+      <SubHeader title={'会社概要'} />
       <Flex margin={10} justify={'center'}>
         <Table border={'gray'}>
           <Tbody>

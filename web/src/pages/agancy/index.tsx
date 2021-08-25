@@ -6,11 +6,8 @@ const Agancy: React.VFC = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <SubHeader pageTitle={'取扱店舗一覧'} />
+        <SubHeader title={'お取扱店舗一覧'} />
         <div className={'m-5'}>
-          <div className={'flex justify-center my-5'}>
-            <h2>ショップリスト</h2>
-          </div>
           <div>
             <AgancyCard agancy={agancies[0]} />
             <AgancyCard agancy={agancies[0]} />

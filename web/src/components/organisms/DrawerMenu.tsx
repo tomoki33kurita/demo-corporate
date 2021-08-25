@@ -24,7 +24,7 @@ export const DrawerMenu: React.FC = () => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Menu</DrawerHeader>
+            <DrawerHeader>ページ</DrawerHeader>
             <DrawerBody>
               {/* todo onCloseの渡し方が微妙だけど、とりあえず実装 */}
               <Navigation onClose={onClose} />

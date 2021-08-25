@@ -6,7 +6,7 @@ const Product: React.VFC = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <SubHeader pageTitle={'製品ラインナップ'} />
+        <SubHeader title={'製品ラインナップ'} />
         <div className={'m-5 flex justify-between '}>
           <ProductCard product={products[0]} />
           <ProductCard product={products[0]} />

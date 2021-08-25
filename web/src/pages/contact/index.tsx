@@ -6,7 +6,7 @@ import { FormInput } from '../../containers/contact/molecules/FormInput'
 const Contact: React.VFC = () => {
   return (
     <Box>
-      <SubHeader pageTitle={'お問い合わせ'} />
+      <SubHeader title={'お問い合わせ'} />
       <Flex justify={'center'} mx={'10'} my={'10'}>
         <FormControl>
           <FormInput label={'お名前'} />
