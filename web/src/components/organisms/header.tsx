@@ -26,7 +26,7 @@ const Header: React.VFC = () => {
                 </li>
                 <li className={'p-4'}>
                   <Link href="/agancy">
-                    <a>お取扱店</a>
+                    <a>お取扱店舗一覧</a>
                   </Link>
                 </li>
                 <li className={'p-4'}>

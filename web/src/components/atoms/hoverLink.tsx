@@ -9,7 +9,7 @@ type Props = {
 export const HoverLink: React.FC<Props> = ({ href, children }) => {
   return (
     <Link href={href}>
-      <A rounded={'base'} _hover={{ bg: 'gray.200' }}>
+      <A rounded={'base'} _hover={{ bg: 'gray.200' }} p={2}>
         {children}
       </A>
     </Link>
