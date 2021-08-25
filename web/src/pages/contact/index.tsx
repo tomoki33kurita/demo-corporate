@@ -7,7 +7,7 @@ const Contact: React.VFC = () => {
   return (
     <Box>
       <SubHeader pageTitle={'お問い合わせ'} />
-      <Flex justify={'center'} mx={'20'} my={'10'}>
+      <Flex justify={'center'} mx={'10'} my={'10'}>
         <FormControl>
           <FormInput label={'お名前'} />
           <FormInput label={'ふりがな'} />
