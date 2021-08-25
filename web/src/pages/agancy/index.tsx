@@ -1,22 +1,32 @@
 import SubHeader from '../../components/organisms/subHeader'
 import AgancyCard from '../../containers/agancy/agancyCard'
 import styles from '../../styles/Home.module.css'
+import { Box, Grid, GridItem } from '@chakra-ui/react'
 
 const Agancy: React.VFC = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <SubHeader title={'お取扱店舗一覧'} />
-        <div className={'m-5'}>
-          <div>
+    <Box>
+      <SubHeader title={'お取扱店舗一覧'} />
+      <div className={'m-5'}>
+        <Grid templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)']}>
+          <GridItem>
             <AgancyCard agancy={agancies[0]} />
+          </GridItem>
+          <GridItem>
             <AgancyCard agancy={agancies[0]} />
+          </GridItem>
+          <GridItem>
             <AgancyCard agancy={agancies[0]} />
+          </GridItem>
+          <GridItem>
             <AgancyCard agancy={agancies[0]} />
-          </div>
-        </div>
-      </main>
-    </div>
+          </GridItem>
+          <GridItem>
+            <AgancyCard agancy={agancies[0]} />
+          </GridItem>
+        </Grid>
+      </div>
+    </Box>
   )
 }
 
