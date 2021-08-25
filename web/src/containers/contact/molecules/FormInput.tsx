@@ -8,7 +8,7 @@ type Props = {
 
 export const FormInput: React.VFC<Props> = ({ label, type }) => {
   return (
-    <Box>
+    <Box mb={3}>
       <FormLabel>{label}</FormLabel>
       <Input type={type || ''} />
     </Box>

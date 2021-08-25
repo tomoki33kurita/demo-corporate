@@ -1,7 +1,7 @@
 import React from 'react'
 import TableRow from '../../components/molecules/tableRow'
 import SubHeader from '../../components/organisms/subHeader'
-import { Box, Flex, Heading, Table, Tbody } from '@chakra-ui/react'
+import { AspectRatio, Box, Flex, Heading, Table, Tbody } from '@chakra-ui/react'
 
 const About: React.VFC = () => {
   return (
@@ -23,6 +23,9 @@ const About: React.VFC = () => {
           </Tbody>
         </Table>
       </Flex>
+      {/* <Flex>
+        google map を挿入する
+      </Flex> */}
     </Box>
   )
 }
