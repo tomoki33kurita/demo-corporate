@@ -1,6 +1,5 @@
 import SubHeader from '../../components/organisms/subHeader'
 import AgancyCard from '../../containers/agancy/agancyCard'
-import styles from '../../styles/Home.module.css'
 import { Box, Grid, GridItem } from '@chakra-ui/react'
 
 const Agancy: React.VFC = () => {
