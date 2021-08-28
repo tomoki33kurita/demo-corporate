@@ -1,13 +1,14 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { Box, Flex, Text, Heading } from '@chakra-ui/react'
+import { CaroucelSlider } from '../components/caroucelSlider'
 
 const Home: React.VFC = () => {
   return (
     <Box>
       {/* <p className={'my-10 ml-10'}>クオリティの高い野球用品をご提供します。</p> */}
       <Box p={28} bgColor={'gray.100'}>
-        メイン画像
+        <CaroucelSlider />
       </Box>
       <Box p={28} bgColor={'green.100'}>
         <Flex justify={'center'}>
