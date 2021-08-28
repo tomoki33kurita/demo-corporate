@@ -14,10 +14,10 @@ const settings = {
 export const CaroucelSlider: React.VFC = () => {
   return (
     <Slider {...settings}>
-      <Box p={'5'}>
+      <Box>
         <Image src={'/sampleTop.jpeg'} alt={'topImg1'} width={'100%'} />
       </Box>
-      <Box p={'5'}>
+      <Box>
         <Image src={'/sampleTop.jpeg'} alt={'topImg1'} width={'100%'} />
       </Box>
     </Slider>
