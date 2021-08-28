@@ -1,5 +1,3 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 import { Box, Flex, Text, Heading, Link as A } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
@@ -7,30 +5,36 @@ import { BannerButton } from '../components/atoms/bannerButton'
 const Home: React.VFC = () => {
   return (
     <Box>
-      <Box px={10} py={7} bgColor={'gray.100'}>
+      <Box p={10} borderBottom={'solid 1px'} borderColor={'gray.100'}>
         <CaroucelSlider />
       </Box>
-      <Box p={28} bgColor={'green.100'}>
-        <Flex justify={'center'}>
-          <Heading as={'h3'} fontSize={'x-large'}>
-            お知らせ
-          </Heading>
-        </Flex>
-        <Flex
-          mx={'auto'}
-          p={5}
-          maxWidth={'800px'}
-          border={'solid 2px'}
-          borderColor={'gray.200'}
-          borderRadius={'10px'}
-        >
-          <Text>aaa</Text>
-          <Text>aaa</Text>
-          <Text>aaa</Text>
-          <Text>aaa</Text>
-          <Text>aaa</Text>
-        </Flex>
-      </Box>
+
+      <Flex p={10} my={7} borderBottom={'solid 1px'} borderColor={'gray.100'}>
+        <Box mx={5} width={'45%'}>
+          <Flex justify={'center'} pb={5}>
+            <Heading as={'h3'} fontSize={'x-large'}>
+              お知らせ
+            </Heading>
+          </Flex>
+          <Box
+            mx={'auto'}
+            p={5}
+            // maxWidth={'800px'}
+            border={'solid 2px'}
+            borderColor={'gray.200'}
+            borderRadius={'10px'}
+          >
+            <Text>2021/08/29　　2022年カタログ販売開始のお知らせ........</Text>
+            <Text>2021/08/01　　お盆休業のお知らせ........</Text>
+            <Text>2021/05/01　　ゴールデンウィーク休業のお知らせ........</Text>
+            <Text>2021/03/12　　限定オーダー開始のお知らせ</Text>
+            <Text>2021/01/29　　アドバイザリースタッフ契約の発表........</Text>
+          </Box>
+        </Box>
+        <Box px={10} mx={5} width={'45%'} background={'pink'} borderRadius={30}>
+          instagram表示範囲
+        </Box>
+      </Flex>
       <Flex
         alignItems={'center'}
         justify={'center'}
@@ -38,17 +42,24 @@ const Home: React.VFC = () => {
         // maxWidth={'800px'}
         width={'100%'}
         mx={'auto'}
-        py={1}
-        mb={0}
+        my={7}
+        p={10}
+        borderBottom={'solid 1px'}
+        borderColor={'gray.100'}
       >
         <BannerButton href={'/products'} heading={'製品ラインナップ'} />
         <BannerButton href={'/agancy'} heading={'お取扱店一覧'} />
         <BannerButton href={'/about'} heading={'会社概要'} />
         <BannerButton href={'/contact'} heading={'お問い合わせ'} />
       </Flex>
-      <Box bgColor={'orange.100'} p={10} height={'xs'}>
-        SNS表示領域
-      </Box>
+      <Flex>
+        <Box bgColor={'orange.100'} p={10} mx={5} height={'xs'} width={'45%'}>
+          Twitter表示領域
+        </Box>
+        <Box bgColor={'orange.100'} p={10} mx={5} height={'xs'} width={'45%'}>
+          Facebook表示領域
+        </Box>
+      </Flex>
     </Box>
   )
 }

@@ -33,7 +33,7 @@
   flex-grow: 1;
 }
 
-.title a {
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -76,9 +76,9 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin: 3rem auto 0;
-}
+} */
 
-.card {
+/* .card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -86,7 +86,6 @@
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
-  /* transition: color 0.15s ease, border-color 0.15s ease; */
   width: 45%;
 }
 
@@ -118,4 +117,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
