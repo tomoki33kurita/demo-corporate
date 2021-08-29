@@ -1,6 +1,7 @@
 import { Box, Flex, Text, Heading, Link as A } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
+import { TimeLineEmbedded } from '../containers/twitter/timeLineEmbedded'
 
 const Home: React.VFC = () => {
   return (
@@ -55,6 +56,14 @@ const Home: React.VFC = () => {
       <Flex>
         <Box bgColor={'orange.100'} p={10} mx={5} height={'xs'} width={'45%'}>
           Twitter表示領域
+          {/* <a
+            className="twitter-timeline"
+            style={{ overflowY: 'scroll', maxHeight: '600px' }}
+            href="https://twitter.com/4860_jp?ref_src=twsrc%5Etfw"
+          >
+            Tweets by 4860_jp
+          </a> */}
+          <TimeLineEmbedded />
         </Box>
         <Box bgColor={'orange.100'} p={10} mx={5} height={'xs'} width={'45%'}>
           Facebook表示領域

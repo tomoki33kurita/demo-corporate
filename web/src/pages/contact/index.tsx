@@ -15,7 +15,15 @@ const Contact: React.VFC = () => {
           <FormLabel>お問い合わせ内容</FormLabel>
           <Textarea />
           <Flex justify={'center'}>
-            <Button type="submit" paddingY={2} paddingX={4} marginY={8}>
+            <Button
+              type="submit"
+              paddingY={2}
+              paddingX={4}
+              marginY={8}
+              background={'yellow.400'}
+              _hover={{ background: 'yellow.300' }}
+              _active={{ background: 'yellow.300' }}
+            >
               送信
             </Button>
           </Flex>

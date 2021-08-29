@@ -7,7 +7,7 @@ type Props = {
 
 const SubHeader: React.VFC<Props> = ({ title }) => {
   return (
-    <Box background={'yellow.200'} p={4}>
+    <Box p={4}>
       <Heading as={'h2'} size={'md'} p={2}>
         {title}
       </Heading>

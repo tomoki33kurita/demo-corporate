@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Flex, Image, border, background } from '@chakra-ui/react'
+import { Box, Text, Image } from '@chakra-ui/react'
 
 type Props = {
   product: {
@@ -14,7 +14,7 @@ const ProductCard: React.VFC<Props> = ({ product }) => {
   return (
     <Box m={3} pb={5} border={'1px'} borderColor={'gray.300'} borderRadius={'md'}>
       <Box px={10} py={5}>
-        <Text textAlign={'center'} px={10} background={'gray.200'} borderRadius={'full'}>
+        <Text textAlign={'center'} px={10} background={'yellow.300'} borderRadius={'full'}>
           型番号：{model}
         </Text>
       </Box>

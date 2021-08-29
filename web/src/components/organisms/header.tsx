@@ -2,47 +2,47 @@ import Link from 'next/link'
 import React from 'react'
 import { DrawerMenu } from './DrawerMenu'
 import { useMediaQuery } from '@chakra-ui/media-query'
+import { Box, Flex, Link as A, List, ListItem } from '@chakra-ui/react'
+import { HoverLink } from '../atoms/hoverLink'
 
 const Header: React.VFC = () => {
   const [isMobile] = useMediaQuery('(max-width:768px )')
   return (
-    <header className={'h-20 p-4 bg-yellow-300	'}>
+    <header className={'h-20'}>
       {isMobile ? (
         <DrawerMenu />
       ) : (
-        <div className={'flex w-full  justify-between'}>
-          <div className={'p-4'}>
+        <Flex
+          width={'full'}
+          justifyContent={'space-between'}
+          borderBottom={'solid 1px'}
+          borderColor={'gray.200'}
+          py={2}
+        >
+          <Box p={4} ml={4}>
             <Link href="/">
-              <a>i studio</a>
+              <A _hover={{ color: 'yellow.400' }}>i studio</A>
             </Link>
-          </div>
-          <div className={''}>
+          </Box>
+          <Box>
             <nav>
-              <ul className={'flex'}>
-                <li className={'p-4'}>
-                  <Link href="/products">
-                    <a>製品ラインナップ</a>
-                  </Link>
-                </li>
-                <li className={'p-4'}>
-                  <Link href="/agancy">
-                    <a>お取扱店舗一覧</a>
-                  </Link>
-                </li>
-                <li className={'p-4'}>
-                  <Link href="/about">
-                    <a>会社概要</a>
-                  </Link>
-                </li>
-                <li className={'p-4'}>
-                  <Link href="/contact">
-                    <a>お問い合わせ</a>
-                  </Link>
-                </li>
-              </ul>
+              <List className={'flex'}>
+                <ListItem p={4}>
+                  <HoverLink href={'/products'}>製品ラインナップ</HoverLink>
+                </ListItem>
+                <ListItem p={4}>
+                  <HoverLink href={'/agancy'}>お取扱店一覧</HoverLink>
+                </ListItem>
+                <ListItem p={4}>
+                  <HoverLink href={'/about'}>会社概要</HoverLink>
+                </ListItem>
+                <ListItem p={4}>
+                  <HoverLink href={'/contact'}>お問い合わせ</HoverLink>
+                </ListItem>
+              </List>
             </nav>
-          </div>
-        </div>
+          </Box>
+        </Flex>
       )}
     </header>
   )
