@@ -10,6 +10,17 @@ const Home: React.VFC = () => {
       </Box>
       <Box p={[5, 5, 10]}>
         <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
+          Yell Storyとは
+        </Heading>
+        <Box p={[3, 3, 5]}>
+          <Text>
+            エールストーリーは、2017年に創業しました。テキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想い
+          </Text>
+        </Box>
+      </Box>
+
+      <Box p={[5, 5, 10]}>
+        <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
           お知らせ
         </Heading>
         <Box
@@ -25,16 +36,6 @@ const Home: React.VFC = () => {
           <Text>2021/05/01　　ゴールデンウィーク休業のお知らせ........</Text>
           <Text>2021/03/12　　限定オーダー開始のお知らせ</Text>
           <Text>2021/01/29　　アドバイザリースタッフ契約の発表........</Text>
-        </Box>
-      </Box>
-      <Box p={[5, 5, 10]}>
-        <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
-          Yell Storyとは
-        </Heading>
-        <Box p={[3, 3, 5]}>
-          <Text>
-            エールストーリーは、2017年に創業しました。テキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想い
-          </Text>
         </Box>
       </Box>
 
