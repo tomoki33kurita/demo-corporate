@@ -7,7 +7,7 @@ const Product: React.VFC = () => {
     <Box>
       <SubHeader title={'製品ラインナップ'} />
       <Grid
-        px={[0, 0, 28]}
+        px={[0, 0, 10]}
         py={[10, 10, 5]}
         templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
       >
