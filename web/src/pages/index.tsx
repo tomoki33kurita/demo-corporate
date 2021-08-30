@@ -1,14 +1,14 @@
-import { Box, Flex, Text, Heading, Link as A, Grid, GridItem } from '@chakra-ui/react'
+import { Box, Flex, Text, Heading } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
 
 const Home: React.VFC = () => {
   return (
     <Box>
-      <Box p={10} borderBottom={'solid 1px'} borderColor={'gray.100'}>
+      <Box p={[5, 5, 10]} borderBottom={'solid 1px'} borderColor={'gray.100'}>
         <CaroucelSlider />
       </Box>
-      <Box p={10}>
+      <Box p={[5, 5, 10]}>
         <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
           お知らせ
         </Heading>
@@ -27,11 +27,11 @@ const Home: React.VFC = () => {
           <Text>2021/01/29　　アドバイザリースタッフ契約の発表........</Text>
         </Box>
       </Box>
-      <Box p={10}>
+      <Box p={[5, 5, 10]}>
         <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
           Yell Storyとは
         </Heading>
-        <Box p={5}>
+        <Box p={[3, 3, 5]}>
           <Text>
             エールストーリーは、2017年に創業しました。テキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想い
           </Text>

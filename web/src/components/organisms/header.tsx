@@ -10,7 +10,12 @@ const Header: React.VFC = () => {
   return (
     <header className={'h-20'}>
       {isMobile ? (
-        <DrawerMenu />
+        <Flex alignItems={'center'}>
+          <DrawerMenu />
+          <Box textAlign={'center'} background={'yellow.400'} width={'full'} py={3}>
+            i studio
+          </Box>
+        </Flex>
       ) : (
         <Flex
           width={'full'}
