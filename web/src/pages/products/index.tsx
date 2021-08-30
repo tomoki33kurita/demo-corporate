@@ -1,15 +1,27 @@
 import SubHeader from '../../components/organisms/subHeader'
 import ProductCard from '../../containers/products/productCard'
-import { Box, Grid, GridItem } from '@chakra-ui/react'
+import { Text, Box, Grid, GridItem } from '@chakra-ui/react'
 
 const Product: React.VFC = () => {
   return (
     <Box>
       <SubHeader title={'製品ラインナップ'} />
+      <Box mx={10} my={5}>
+        <Text px={10}>
+          エールストーリー はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー
+          はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。
+        </Text>
+      </Box>
+
       <Grid
         px={[0, 0, 10]}
         py={[10, 10, 5]}
-        templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
+        templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
       >
         <GridItem>
           <ProductCard product={products[0]} />

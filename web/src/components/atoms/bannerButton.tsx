@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { Heading, Link as A } from '@chakra-ui/react'
+import { Link as A } from '@chakra-ui/react'
 
 type Props = {
   href: string
@@ -21,7 +21,7 @@ export const BannerButton: React.VFC<Props> = ({ href, heading }) => {
           color: 'yellow.400',
           borderColor: 'yellow.400'
         }}
-        width={'49%'}
+        width={['100%', '100%', '100%', '49%']}
         fontSize={'xl'}
       >
         {heading}

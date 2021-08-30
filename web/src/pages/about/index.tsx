@@ -1,13 +1,18 @@
 import React from 'react'
 import TableRow from '../../components/molecules/tableRow'
 import SubHeader from '../../components/organisms/subHeader'
-import { AspectRatio, Box, Flex, Heading, Table, Tbody } from '@chakra-ui/react'
+import { Text, Box, Flex, Table, Tbody } from '@chakra-ui/react'
 
 const About: React.VFC = () => {
   return (
     <Box minHeight={'100vh'}>
       <SubHeader title={'会社概要'} />
-      <Flex margin={10} justify={'center'}>
+      <Box m={10}>
+        <Text p={10}>
+          エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。エールストーリーは2017年に創業しました。奈良を活動拠点としています。
+        </Text>
+      </Box>
+      <Flex m={10} justify={'center'}>
         <Table border={'gray'}>
           <Tbody>
             <TableRow head={'会社名'} data={'株式会社 i studio'} />

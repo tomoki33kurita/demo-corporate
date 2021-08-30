@@ -9,11 +9,9 @@ const Home: React.VFC = () => {
         <CaroucelSlider />
       </Box>
       <Box p={10}>
-        <Flex justify={'center'} pb={5}>
-          <Heading as={'h3'} fontSize={'x-large'}>
-            お知らせ
-          </Heading>
-        </Flex>
+        <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
+          お知らせ
+        </Heading>
         <Box
           mx={'auto'}
           p={5}
@@ -29,6 +27,16 @@ const Home: React.VFC = () => {
           <Text>2021/01/29　　アドバイザリースタッフ契約の発表........</Text>
         </Box>
       </Box>
+      <Box p={10}>
+        <Heading as={'h3'} fontSize={'x-large'} pb={5} textAlign={'center'}>
+          Yell Storyとは
+        </Heading>
+        <Box p={5}>
+          <Text>
+            エールストーリーは、2017年に創業しました。テキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想いテキスト想い
+          </Text>
+        </Box>
+      </Box>
 
       <Flex
         alignItems={'center'}
@@ -37,13 +45,11 @@ const Home: React.VFC = () => {
         // maxWidth={'800px'}
         width={'100%'}
         mx={'auto'}
-        my={7}
-        p={10}
-        borderBottom={'solid 1px'}
-        borderColor={'gray.100'}
+        mb={7}
+        p={[0, 10]}
       >
-        <BannerButton href={'/products'} heading={'製品ラインナップ'} />
-        <BannerButton href={'/agancy'} heading={'お取扱店一覧'} />
+        <BannerButton href={'/products'} heading={'製品'} />
+        <BannerButton href={'/agancy'} heading={'お取扱店'} />
         <BannerButton href={'/about'} heading={'会社概要'} />
         <BannerButton href={'/contact'} heading={'お問い合わせ'} />
       </Flex>

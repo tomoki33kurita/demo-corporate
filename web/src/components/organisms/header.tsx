@@ -28,10 +28,10 @@ const Header: React.VFC = () => {
             <nav>
               <List className={'flex'}>
                 <ListItem p={4}>
-                  <HoverLink href={'/products'}>製品ラインナップ</HoverLink>
+                  <HoverLink href={'/products'}>製品</HoverLink>
                 </ListItem>
                 <ListItem p={4}>
-                  <HoverLink href={'/agancy'}>お取扱店一覧</HoverLink>
+                  <HoverLink href={'/agancy'}>お取扱店</HoverLink>
                 </ListItem>
                 <ListItem p={4}>
                   <HoverLink href={'/about'}>会社概要</HoverLink>
