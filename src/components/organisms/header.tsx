@@ -41,6 +41,9 @@ const Header: React.VFC = () => {
                   <HoverLink href={"/products"}>製品</HoverLink>
                 </ListItem>
                 <ListItem p={4}>
+                  <HoverLink href={"/gallery"}>ギャラリー</HoverLink>
+                </ListItem>
+                <ListItem p={4}>
                   <HoverLink href={"/agancy"}>お取扱店</HoverLink>
                 </ListItem>
                 <ListItem p={4}>

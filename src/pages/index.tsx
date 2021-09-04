@@ -5,23 +5,23 @@ import { BannerButton } from "../components/atoms/bannerButton";
 const Home: React.VFC = () => {
   return (
     <Box>
-      <Box p={[5, 5, 10]} borderBottom={"solid 1px"} borderColor={"gray.100"}>
+      <Box borderBottom={"solid 1px"} borderColor={"gray.100"}>
         <CaroucelSlider />
       </Box>
       <Box p={[5, 5, 10]}>
-        <Heading as={"h3"} fontSize={"x-large"} pb={5} textAlign={"center"}>
-          Yell Storyとは
+        <Heading as={"h3"} fontSize={"xx-large"} pb={5} textAlign={"center"}>
+          What is Yell Story
         </Heading>
         <Box p={[3, 3, 5]}>
-          <Text>
+          <Text fontSize={14}>
             エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。
           </Text>
         </Box>
       </Box>
 
       <Box p={[5, 5, 10]}>
-        <Heading as={"h3"} fontSize={"x-large"} pb={5} textAlign={"center"}>
-          お知らせ
+        <Heading as={"h3"} fontSize={"xx-large"} pb={5} textAlign={"center"}>
+          News
         </Heading>
         <Box
           mx={"auto"}
@@ -31,11 +31,17 @@ const Home: React.VFC = () => {
           borderColor={"gray.200"}
           borderRadius={"10px"}
         >
-          <Text>2021/08/29　　2022年カタログ販売開始のお知らせ........</Text>
-          <Text>2021/08/01　　お盆休業のお知らせ........</Text>
-          <Text>2021/05/01　　ゴールデンウィーク休業のお知らせ........</Text>
-          <Text>2021/03/12　　限定オーダー開始のお知らせ</Text>
-          <Text>2021/01/29　　アドバイザリースタッフ契約の発表........</Text>
+          <Text fontSize={14}>
+            2021/08/29　　2022年カタログ販売開始のお知らせ........
+          </Text>
+          <Text fontSize={14}>2021/08/01　　お盆休業のお知らせ........</Text>
+          <Text fontSize={14}>
+            2021/05/01　　ゴールデンウィーク休業のお知らせ........
+          </Text>
+          <Text fontSize={14}>2021/03/12　　限定オーダー開始のお知らせ</Text>
+          <Text fontSize={14}>
+            2021/01/29　　アドバイザリースタッフ契約の発表........
+          </Text>
         </Box>
       </Box>
 
