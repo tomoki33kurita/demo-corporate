@@ -2,8 +2,23 @@ import React from 'react'
 import { Box, Flex, Text, Heading } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
+import { fetchAllNews } from './api/news'
+import dayjs from 'dayjs'
 
-const Home: React.VFC = () => {
+export const getStaticProps = async () => {
+  const allNews = await fetchAllNews()
+  return {
+    props: {
+      allNews
+    }
+  }
+}
+
+type Props = {
+  allNews: any[]
+}
+
+const Home: React.VFC<Props> = ({ allNews }) => {
   return (
     <Box>
       <Box borderBottom={'solid 1px'} borderColor={'gray.100'}>
@@ -32,11 +47,20 @@ const Home: React.VFC = () => {
           borderColor={'gray.200'}
           borderRadius={'10px'}
         >
-          <Text fontSize={14}>2021/08/29 2022年カタログ販売開始のお知らせ........</Text>
-          <Text fontSize={14}>2021/08/01 お盆休業のお知らせ........</Text>
-          <Text fontSize={14}>2021/05/01 ゴールデンウィーク休業のお知らせ........</Text>
-          <Text fontSize={14}>2021/03/12 限定オーダー開始のお知らせ</Text>
-          <Text fontSize={14}>2021/01/29 アドバイザリースタッフ契約の発表........</Text>
+          {allNews.map((news: any) => {
+            console.log(news.id)
+            return (
+              <Flex key={news.id}>
+                <Box mr={3}>{dayjs(news.createdAt).format('YYYY/MM/DD')}</Box>
+                <Text fontSize={14}>{news.title}</Text>
+                {/* <Box
+                  dangerouslySetInnerHTML={{
+                    __html: news.content
+                  }}
+                ></Box> */}
+              </Flex>
+            )
+          })}
         </Box>
       </Box>
 
