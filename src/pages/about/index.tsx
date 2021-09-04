@@ -17,10 +17,7 @@ const About: React.VFC = () => {
           <Tbody>
             <TableRow head={'会社名'} data={'株式会社 i studio'} />
             <TableRow head={'代表者'} data={'石川佳和'} />
-            <TableRow
-              head={'本社'}
-              data={'〒633-0061 奈良県桜井市上之庄683-3 TEL:0744-46-5181 FAX:0744-46-5182'}
-            />
+            <TableRow head={'本社'} data={'〒633-0061 奈良県桜井市上之庄683-3 TEL:0744-46-5181 FAX:0744-46-5182'} />
             <TableRow head={'創業'} data={'2017年7月'} />
             <TableRow head={'資本金'} data={'1000万円'} />
             <TableRow head={'在職人数'} data={'4人'} />
