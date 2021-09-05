@@ -8,7 +8,7 @@ type Props = {
 const SubHeader: React.VFC<Props> = ({ title }) => {
   return (
     <Box p={4}>
-      <Heading as={'h2'} size={'md'} p={2}>
+      <Heading as={'h2'} color={'gray.100'} size={'md'} p={2}>
         {title}
       </Heading>
     </Box>

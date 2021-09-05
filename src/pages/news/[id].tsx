@@ -25,10 +25,11 @@ const NewsPost = ({ news }) => {
   console.log('news2の中身', news)
   return (
     <>
-      <Heading as={'h2'} p={7}>
+      <Heading as={'h2'} p={7} color={'gray.100'}>
         {news.title}
       </Heading>
       <Box
+        backgroundColor={'gray.100'}
         p={[0, 10]}
         dangerouslySetInnerHTML={{
           __html: news.content

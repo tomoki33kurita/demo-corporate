@@ -15,7 +15,15 @@ type Props = {
 const AgancyCard: React.VFC<Props> = ({ agancy }) => {
   const { shopName, address, phone, content, link } = agancy
   return (
-    <Box border={'2px'} borderRadius={'lg'} borderColor={'gray.300'} padding={3} mx={3} marginBottom={3}>
+    <Box
+      border={'2px'}
+      borderRadius={'lg'}
+      borderColor={'gray.300'}
+      padding={3}
+      mx={3}
+      marginBottom={3}
+      backgroundColor={'gray.100'}
+    >
       <Heading size="md" marginBottom={3} fontWeight={'bold'}>
         {shopName}
       </Heading>

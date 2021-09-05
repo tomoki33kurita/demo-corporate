@@ -13,7 +13,7 @@ const Contact: React.VFC = () => {
           <FormInput label={'ふりがな'} />
           <FormInput label={'メールアドレス'} type={'email'} />
           <FormLabel>お問い合わせ内容</FormLabel>
-          <Textarea />
+          <Textarea backgroundColor={'gray.100'} />
           <Flex justify={'center'}>
             <Button
               type="submit"

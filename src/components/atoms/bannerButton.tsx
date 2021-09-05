@@ -11,11 +11,12 @@ export const BannerButton: React.VFC<Props> = ({ href, heading }) => {
   return (
     <Link href={href}>
       <A
+        backgroundColor={'gray.100'}
         m={1}
         p={10}
         textAlign={'left'}
-        color={'#aaa'}
-        border={'solid 1px #aaa'}
+        border={'solid 1px'}
+        borderColor={'gray.100'}
         _hover={{
           textDecoration: 'none',
           color: 'yellow.400',

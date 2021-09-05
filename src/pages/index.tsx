@@ -28,7 +28,7 @@ const Home: React.VFC<Props> = ({ allNews }) => {
       <Box borderBottom={'solid 1px'} borderColor={'gray.100'}>
         <CaroucelSlider />
       </Box>
-      <Box p={[5, 5, 10]}>
+      <Box p={[5, 5, 10]} my={10} backgroundColor={'gray.100'}>
         <Heading as={'h3'} fontSize={'xx-large'} pb={5} textAlign={'center'}>
           What is Yell Story
         </Heading>
@@ -52,7 +52,7 @@ const Home: React.VFC<Props> = ({ allNews }) => {
         </Box>
       </Box>
 
-      <Box p={[5, 5, 10]}>
+      <Box p={[5, 5, 10]} my={10} backgroundColor={'gray.100'}>
         <Heading as={'h3'} fontSize={'xx-large'} pb={5} textAlign={'center'}>
           News
         </Heading>
@@ -88,7 +88,6 @@ const Home: React.VFC<Props> = ({ allNews }) => {
         // maxWidth={'800px'}
         width={'100%'}
         mx={'auto'}
-        mb={7}
         p={[0, 10]}
       >
         <BannerButton href={'/products'} heading={'製品'} />
