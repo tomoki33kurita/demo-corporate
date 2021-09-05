@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  Box,
   Button,
   Drawer,
   DrawerCloseButton,
@@ -9,7 +8,6 @@ import {
   DrawerHeader,
   DrawerBody,
   useDisclosure,
-  Text,
   Flex
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
