@@ -21,7 +21,7 @@ export const getStaticProps = async ({ params }: { params: any }) => {
   }
 }
 
-const NewsPost = ({ news }) => {
+const NewsPost = ({ news }: { news: any }) => {
   console.log('news2の中身', news)
   return (
     <>

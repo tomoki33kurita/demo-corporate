@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import React from 'react'
 import { Link as A } from '@chakra-ui/react'
+import Link from 'next/link'
 
 type Props = {
   href: string

@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Header from './organisms/header'
 import { Box } from '@chakra-ui/react'
@@ -19,11 +18,19 @@ const Layout: React.FC = ({ children }) => {
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
       >
-        {' '}
         {children}
       </Box>
-      <footer className={styles.footer}>
-        <p>Copryright © i studio Inc. All Rights Reserved.</p>{' '}
+      <footer
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '100%',
+          height: '100px',
+          borderTop: 'solid 1px #eaeaea'
+        }}
+      >
+        <p>Copryright © i studio Inc. All Rights Reserved.</p>
       </footer>
     </Box>
   )

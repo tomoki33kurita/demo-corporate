@@ -1,3 +1,4 @@
+import React from 'react'
 import SubHeader from '../../components/organisms/subHeader'
 import ProductCard from '../../containers/products/productCard'
 import { Text, Box, Grid, GridItem } from '@chakra-ui/react'

@@ -4,7 +4,9 @@
 //   content: string
 // }
 
+// eslint-disable-next-line
 const serviceId = process.env.NEXT_PUBLIC_MICRO_CMS_SERVICE_ID
+// eslint-disable-next-line
 const getApiKey = process.env.NEXT_PUBLIC_MICRO_CMS_GET_API_KEY
 const baseUrl = `https://${serviceId}.microcms.io/api/v1`
 

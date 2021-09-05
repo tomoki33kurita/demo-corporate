@@ -4,7 +4,6 @@ import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
 import { fetchAllNews, fetchNewsById } from './api/news'
 import dayjs from 'dayjs'
-import Link from 'next/link'
 import { HoverLink } from '../components/atoms/hoverLink'
 
 export const getStaticProps = async () => {
