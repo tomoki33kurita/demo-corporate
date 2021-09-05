@@ -87,7 +87,7 @@ const Home: React.VFC<Props> = ({ allNews }) => {
         // maxWidth={'800px'}
         width={'100%'}
         mx={'auto'}
-        p={[0, 10]}
+        p={[7, 10]}
       >
         <BannerButton href={'/products'} heading={'製品'} />
         <BannerButton href={'/agancy'} heading={'お取扱店'} />

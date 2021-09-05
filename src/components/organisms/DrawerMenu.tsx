@@ -24,7 +24,7 @@ export const DrawerMenu: React.FC = () => {
       </Button>
       <Drawer isOpen={isOpen} onClose={onClose} placement={'left'} finalFocusRef={btnRef}>
         <DrawerOverlay>
-          <DrawerContent>
+          <DrawerContent backgroundColor={'gray.100'}>
             <DrawerCloseButton />
             <DrawerHeader>メニュー</DrawerHeader>
             <DrawerBody>

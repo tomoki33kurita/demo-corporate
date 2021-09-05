@@ -14,7 +14,7 @@ const Agancy: React.VFC = () => {
           は以下のお店で購入できます。
         </Text>
       </Box>
-      <Grid px={[0, 0, 10]} py={[10, 10, 5]} templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)']}>
+      <Grid px={[0, 0, 7]} py={[3, 3, 5]} templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)']}>
         <GridItem>
           <AgancyCard agancy={agancies[0]} />
         </GridItem>

@@ -28,7 +28,7 @@ const Layout: React.FC = ({ children }) => {
         height={'100px'}
         backgroundColor={'gray.100'}
       >
-        <Text>Copryright © i studio Inc. All Rights Reserved.</Text>
+        <Text textAlign={'center'}>Copryright © i studio Inc. All Rights Reserved.</Text>
       </Flex>
     </Box>
   )
