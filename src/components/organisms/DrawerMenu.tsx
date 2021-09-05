@@ -18,7 +18,7 @@ export const DrawerMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef<HTMLButtonElement>(null)
   return (
-    <Flex alignItems={'center'}>
+    <Flex alignItems={'center'} backgroundColor={'gray.100'}>
       <Button onClick={onOpen}>
         <HamburgerIcon />
       </Button>

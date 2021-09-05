@@ -1,10 +1,11 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
+import SubHeader from '../../components/organisms/subHeader'
 
 const Gallery: React.VFC = () => {
   return (
     <Box minHeight={'100vh'} pb={5}>
-      ギャラリーページ
+      <SubHeader title={'ギャラリーページ'} />
     </Box>
   )
 }

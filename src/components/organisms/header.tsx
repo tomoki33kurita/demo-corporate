@@ -15,7 +15,7 @@ const Header: React.VFC = () => {
         <Flex
           background={'gray.100'}
           width={'full'}
-          // justifyContent={'space-between'}
+          justifyContent={'space-between'}
           borderBottom={'solid 1px'}
           borderColor={'gray.200'}
           py={2}
