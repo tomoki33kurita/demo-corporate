@@ -34,10 +34,12 @@ export const fetchAllNews = async (): Promise<any[]> => {
   return ['empty data']
 }
 
-export const fetchNewsById = async (contentId: string | string[]) => {
+export const fetchNewsById = async (contentId: string | string[] | undefined) => {
   // @ts-ignore
   const data = await fetch(`${baseUrl}/news/${contentId}`, params('GET'))
+    .then((res) => res.json())
+    .catch((e) => console.log('error occured', e))
   // @ts-ignore
-  if (data?.content) return data.content
+  if (data) return data
   return { message: 'empty data' }
 }

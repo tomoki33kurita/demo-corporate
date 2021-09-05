@@ -8,8 +8,8 @@ type Props = {
 
 export const HoverLink: React.FC<Props> = ({ href, children }) => {
   return (
-    <Link href={href}>
-      <A _hover={{ color: 'yellow.400' }} p={2}>
+    <Link href={href} passHref>
+      <A _hover={{ color: 'yellow.400' }} p={2} target={'_brank'}>
         {children}
       </A>
     </Link>

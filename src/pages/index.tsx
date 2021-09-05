@@ -2,14 +2,18 @@ import React from 'react'
 import { Box, Flex, Text, Heading } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
-import { fetchAllNews } from './api/news'
+import { fetchAllNews, fetchNewsById } from './api/news'
 import dayjs from 'dayjs'
+import Link from 'next/link'
+import { HoverLink } from '../components/atoms/hoverLink'
 
 export const getStaticProps = async () => {
+  const news = await fetchNewsById('732462056124')
   const allNews = await fetchAllNews()
   return {
     props: {
-      allNews
+      allNews,
+      news
     }
   }
 }
@@ -29,8 +33,21 @@ const Home: React.VFC<Props> = ({ allNews }) => {
           What is Yell Story
         </Heading>
         <Box p={[3, 3, 5]}>
-          <Text fontSize={14}>
-            エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。エールストーリーは、2017年に創業しました。
+          <Text fontSize={14} textAlign={'center'} lineHeight={2}>
+            エールストーリーは日々進化、変化していくプレイスタイルを
+            <br />
+            常にプレイヤー目線で研究してきたグラブを製作しています。
+            <br />
+            私たちグラブ職人が、野球で培ってきた経験を基に、あらゆる工程の場面で、
+            <br />
+            幾度となく手を通し、"捕る""掴む""当てる"感覚を吹き込みながら、
+            <br />
+            真剣にグラブと向き合っています。
+          </Text>
+          <Text fontSize={14} mt={5} textAlign={'center'} lineHeight={2}>
+            あなたのベースボールストーリーが充実したものになるように、
+            <br />
+            私たちは全力でエールを送り続けます
           </Text>
         </Box>
       </Box>
@@ -48,17 +65,17 @@ const Home: React.VFC<Props> = ({ allNews }) => {
           borderRadius={'10px'}
         >
           {allNews.map((news: any) => {
-            console.log(news.id)
             return (
-              <Flex key={news.id}>
-                <Box mr={3}>{dayjs(news.createdAt).format('YYYY/MM/DD')}</Box>
-                <Text fontSize={14}>{news.title}</Text>
-                {/* <Box
-                  dangerouslySetInnerHTML={{
-                    __html: news.content
-                  }}
-                ></Box> */}
-              </Flex>
+              <Box>
+                <HoverLink key={news.id} href={`/news/${news.id}`}>
+                  <Box as={'span'} mr={3}>
+                    {dayjs(news.createdAt).format('YYYY/MM/DD')}
+                  </Box>
+                  <Box as={'span'} fontSize={14}>
+                    {news.title}
+                  </Box>
+                </HoverLink>
+              </Box>
             )
           })}
         </Box>
