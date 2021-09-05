@@ -23,7 +23,7 @@ type Props = {
 
 const Home: React.VFC<Props> = ({ allNews }) => {
   return (
-    <Box>
+    <Box minHeight={'100vh'} pt={10}>
       <Box borderBottom={'solid 1px'} borderColor={'gray.100'}>
         <CaroucelSlider />
       </Box>
@@ -60,7 +60,7 @@ const Home: React.VFC<Props> = ({ allNews }) => {
           p={5}
           // maxWidth={'800px'}
           border={'solid 2px'}
-          borderColor={'gray.200'}
+          borderColor={'gray.300'}
           borderRadius={'10px'}
         >
           {allNews.map((news: any) => {

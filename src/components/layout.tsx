@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from './organisms/header'
-import { Box } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -20,18 +20,16 @@ const Layout: React.FC = ({ children }) => {
       >
         {children}
       </Box>
-      <footer
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100%',
-          height: '100px',
-          borderTop: 'solid 1px #eaeaea'
-        }}
+      <Flex
+        as={'footer'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        width={'full'}
+        height={'100px'}
+        backgroundColor={'gray.100'}
       >
-        <p>Copryright © i studio Inc. All Rights Reserved.</p>
-      </footer>
+        <Text>Copryright © i studio Inc. All Rights Reserved.</Text>
+      </Flex>
     </Box>
   )
 }

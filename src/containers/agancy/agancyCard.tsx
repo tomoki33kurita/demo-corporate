@@ -18,7 +18,7 @@ const AgancyCard: React.VFC<Props> = ({ agancy }) => {
     <Box
       border={'2px'}
       borderRadius={'lg'}
-      borderColor={'gray.300'}
+      borderColor={'gray.100'}
       padding={3}
       mx={3}
       marginBottom={3}
@@ -33,7 +33,7 @@ const AgancyCard: React.VFC<Props> = ({ agancy }) => {
       {link && (
         <Text ml={3}>
           <Link href={link}>
-            <A color={'yellow.500'}>{link}</A>
+            <A color={'blue.500'}>{link}</A>
           </Link>
         </Text>
       )}

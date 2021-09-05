@@ -8,16 +8,17 @@ import { HoverLink } from '../atoms/hoverLink'
 const Header: React.VFC = () => {
   const [isMobile] = useMediaQuery('(max-width:768px )')
   return (
-    <header className={'h-20'}>
+    <header>
       {isMobile ? (
-        <Flex alignItems={'center'}>
+        <Flex alignItems={'center'} justifyContent={'center'} background={'gray.100'} height={'60px'}>
           <DrawerMenu />
-          <Box textAlign={'center'} background={'yellow.400'} width={'full'} py={3}>
-            i studio
+          <Box textAlign={'center'} _hover={{ color: 'blue.500' }}>
+            <HoverLink href={'/'}>i studio</HoverLink>
           </Box>
         </Flex>
       ) : (
         <Flex
+          background={'gray.100'}
           width={'full'}
           justifyContent={'space-between'}
           borderBottom={'solid 1px'}
@@ -26,7 +27,7 @@ const Header: React.VFC = () => {
         >
           <Box p={4} ml={4}>
             <Link href="/">
-              <A _hover={{ color: 'yellow.400' }}>i studio</A>
+              <A _hover={{ color: 'blue.500' }}>i studio</A>
             </Link>
           </Box>
           <Box>

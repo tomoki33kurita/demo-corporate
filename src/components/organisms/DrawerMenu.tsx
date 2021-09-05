@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  Box,
   Button,
   Drawer,
   DrawerCloseButton,
@@ -16,7 +17,7 @@ export const DrawerMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef<HTMLButtonElement>(null)
   return (
-    <>
+    <Box as={'span'} position={'absolute'} left={'0px'}>
       <Button onClick={onOpen}>
         <HamburgerIcon />
       </Button>
@@ -32,6 +33,6 @@ export const DrawerMenu: React.FC = () => {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </>
+    </Box>
   )
 }

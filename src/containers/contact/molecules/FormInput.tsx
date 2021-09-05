@@ -9,7 +9,9 @@ type Props = {
 export const FormInput: React.VFC<Props> = ({ label, type }) => {
   return (
     <Box mb={3}>
-      <FormLabel color={'gray.100'}>{label}</FormLabel>
+      <FormLabel color={'gray.100'} fontWeight={'bold'}>
+        {label}
+      </FormLabel>
       <Input type={type || ''} backgroundColor={'gray.100'} />
     </Box>
   )

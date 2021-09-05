@@ -5,7 +5,7 @@ import { Text, Box, Grid, GridItem } from '@chakra-ui/react'
 
 const Agancy: React.VFC = () => {
   return (
-    <Box>
+    <Box minHeight={'100vh'}>
       <SubHeader title={'お取扱店舗一覧'} />
       <Box mx={[5, 5, 10]} my={5}>
         <Text px={[5, 5, 10]} color={'gray.100'}>
