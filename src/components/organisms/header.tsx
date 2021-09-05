@@ -7,7 +7,6 @@ import { HoverLink } from '../atoms/hoverLink'
 
 const Header: React.VFC = () => {
   const [isMobile] = useMediaQuery('(max-width:768px )')
-  console.log('中身', isMobile)
   return (
     <header>
       {isMobile ? (

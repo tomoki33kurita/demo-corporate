@@ -22,7 +22,6 @@ export const getStaticProps = async ({ params }: { params: any }) => {
 }
 
 const NewsPost = ({ news }: { news: any }) => {
-  console.log('news2の中身', news)
   return (
     <Box minHeight={'100vh'}>
       <Heading as={'h2'} p={7} color={'gray.100'}>
