@@ -65,8 +65,8 @@ const Home: React.VFC<Props> = ({ allNews }) => {
         >
           {allNews.map((news: any) => {
             return (
-              <Box>
-                <HoverLink key={news.id} href={`/news/${news.id}`}>
+              <Box key={news.id}>
+                <HoverLink href={`/news/${news.id}`}>
                   <Box as={'span'} mr={3}>
                     {dayjs(news.createdAt).format('YYYY/MM/DD')}
                   </Box>

@@ -8,16 +8,19 @@ import {
   DrawerOverlay,
   DrawerHeader,
   DrawerBody,
-  useDisclosure
+  useDisclosure,
+  Text,
+  Flex
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Navigation } from '../molecules/navigation'
+import { HoverLink } from '../atoms/hoverLink'
 
 export const DrawerMenu: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef<HTMLButtonElement>(null)
   return (
-    <Box as={'span'} position={'absolute'} left={'0px'}>
+    <Flex alignItems={'center'}>
       <Button onClick={onOpen}>
         <HamburgerIcon />
       </Button>
@@ -33,6 +36,7 @@ export const DrawerMenu: React.FC = () => {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </Box>
+      <HoverLink href={'/'}>i studio</HoverLink>
+    </Flex>
   )
 }
