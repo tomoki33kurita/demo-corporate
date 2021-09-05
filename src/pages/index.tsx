@@ -23,7 +23,7 @@ const Home: React.VFC<Props> = ({ allNews }) => {
   return (
     <Box minHeight={'100vh'} pt={10}>
       <Box borderBottom={'solid 1px'} borderColor={'gray.100'}>
-        <CaroucelSlider />
+        <CaroucelSlider urls={['/sampleTop.jpeg', '/sampleTop2.jpeg']} />
       </Box>
       <Box p={[5, 5, 10]} my={10} backgroundColor={'gray.100'}>
         <Heading as={'h3'} fontSize={'xx-large'} pb={5} textAlign={'center'}>

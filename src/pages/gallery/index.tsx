@@ -21,7 +21,7 @@ type Props = {
 const Gallery: React.VFC<Props> = ({ allGalleries }) => {
   return (
     <Box minHeight={'100vh'} pb={5}>
-      <SubHeader title={'ギャラリーページ'} />
+      <SubHeader title={'ギャラリー'} />
       <Grid
         px={[0, 0, 10]}
         py={[10, 10, 5]}

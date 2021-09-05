@@ -7,7 +7,7 @@ import 'swiper/swiper-bundle.min.css'
 
 SwiperCore.use([Autoplay, EffectFade, Pagination, Navigation])
 
-export const CaroucelSlider: React.VFC = () => {
+export const CaroucelSlider: React.VFC<{ urls: string[] }> = ({ urls }) => {
   return (
     <Swiper
       pagination={{ clickable: true }}
@@ -17,12 +17,11 @@ export const CaroucelSlider: React.VFC = () => {
       effect={'fade'}
       navigation
     >
-      <SwiperSlide>
-        <Image src={'/sampleTop.jpeg'} alt={'topImg1'} width={'100%'} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image src={'/sampleTop2.jpeg'} alt={'topImg2'} width={'100%'} />
-      </SwiperSlide>
+      {urls.map((url) => (
+        <SwiperSlide key={url}>
+          <Image src={url} alt={'topImg1'} width={'100%'} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   )
 }
