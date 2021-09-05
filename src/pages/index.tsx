@@ -2,17 +2,15 @@ import React from 'react'
 import { Box, Flex, Text, Heading } from '@chakra-ui/react'
 import { CaroucelSlider } from '../components/caroucelSlider'
 import { BannerButton } from '../components/atoms/bannerButton'
-import { fetchAllNews, fetchNewsById } from './api/news'
+import { fetchAllNews } from './api/news'
 import dayjs from 'dayjs'
 import { HoverLink } from '../components/atoms/hoverLink'
 
 export const getStaticProps = async () => {
-  const news = await fetchNewsById('732462056124')
   const allNews = await fetchAllNews()
   return {
     props: {
-      allNews,
-      news
+      allNews
     }
   }
 }
