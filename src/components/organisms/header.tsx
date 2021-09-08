@@ -40,9 +40,10 @@ const Header: React.VFC = () => {
                 <ListItem p={4}>
                   <HoverLink href={'/about'}>会社概要</HoverLink>
                 </ListItem>
-                <ListItem p={4}>
+                {/* お問い合わせできないように変更 */}
+                {/* <ListItem p={4}>
                   <HoverLink href={'/contact'}>お問い合わせ</HoverLink>
-                </ListItem>
+                </ListItem> */}
               </List>
             </nav>
           </Box>

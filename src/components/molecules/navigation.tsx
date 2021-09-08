@@ -14,7 +14,7 @@ export const Navigation: React.VFC<Props> = ({ onClose }) => {
       <HoverLink href={'/gallery'}>ギャラリー</HoverLink>
       <HoverLink href={'/agancy'}>お取扱店</HoverLink>
       <HoverLink href={'/about'}>会社概要</HoverLink>
-      <HoverLink href={'/contact'}>お問い合わせ</HoverLink>
+      {/* <HoverLink href={'/contact'}>お問い合わせ</HoverLink> */}
     </Stack>
   )
 }
