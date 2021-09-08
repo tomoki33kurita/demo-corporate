@@ -7,6 +7,11 @@ const Contact: React.VFC = () => {
   return (
     <Box minHeight={'100vh'}>
       <SubHeader title={'お問い合わせ'} />
+      <Flex mx={'auto'} justifyContent={'center'}>
+        <Box m={1} color={'red.400'} backgroundColor={'gray.100'}>
+          現在フォームからのお問い合わせは受け付けておりません。
+        </Box>
+      </Flex>
       <Flex justify={'center'} mx={'10'} my={'10'}>
         <FormControl>
           <FormInput label={'お名前'} />
@@ -25,6 +30,7 @@ const Contact: React.VFC = () => {
               color={'blue.500'}
               _hover={{ background: 'blue.500', color: 'gray.100' }}
               _active={{ background: 'blue.500' }}
+              isDisabled
             >
               送信
             </Button>
