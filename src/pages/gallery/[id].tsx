@@ -25,17 +25,12 @@ export const getStaticProps = async ({ params }: { params: any }) => {
 const GalleryPost = ({ gallery }: { gallery: any }) => {
   return (
     <Box minHeight={'100vh'} p={[5, 10, 30]} mx={'auto'}>
-      <Box pt={5} px={5} color={'gray.100'} fontWeight={'bold'}>
-        <Text textAlign={'center'} px={10} mt={3} mb={7} background={'blue.300'} borderRadius={'full'}>
-          型番号：{gallery.productNum}
-        </Text>
-        <Text mr={2}>長さ：約{gallery.size}cm</Text>
-        <Text mr={2}>
-          お名前：{gallery.prefectures},{gallery.name}
-        </Text>
-        <Text>種類：{gallery.type}</Text>
-      </Box>
-      <Box p={[5, 10, 30]}>
+      <Box px={[0, 20, 20, 60]}>
+        <Box pt={[0, 5]} px={[0, 5]} color={'gray.100'} fontWeight={'bold'}>
+          <Text mr={2}>型番号：{gallery.productNum}</Text>
+          <Text mr={2}>長さ：約{gallery.size}cm</Text>
+          <Text>種類：{gallery.type}</Text>
+        </Box>
         <CaroucelSlider urls={[gallery.imageUrl1.url, gallery.imageUrl2.url, gallery.imageUrl3.url]} />
       </Box>
     </Box>

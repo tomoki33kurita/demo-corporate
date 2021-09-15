@@ -14,7 +14,7 @@ export const CaroucelSlider: React.VFC<{ urls: string[] }> = ({ urls }) => {
       slidesPerView={1}
       autoplay={{ delay: 7000 }}
       loop
-      effect={'fade'}
+      // effect={'fade'}
       navigation
     >
       {urls.map((url) => (
