@@ -88,9 +88,9 @@ const Home: React.VFC<Props> = ({ allNews }) => {
         p={[7, 10]}
       >
         <BannerButton href={'/products'} heading={'製品'} />
+        <BannerButton href={'/gallery'} heading={'ギャラリー'} />
         <BannerButton href={'/agancy'} heading={'お取扱店'} />
         <BannerButton href={'/about'} heading={'会社概要'} />
-        <BannerButton href={'/contact'} heading={'お問い合わせ'} />
       </Flex>
     </Box>
   )
