@@ -1,7 +1,7 @@
 import React from 'react'
 import SubHeader from '../../components/organisms/subHeader'
 import ProductCard from '../../containers/products/productCard'
-import { Text, Box, Grid, GridItem } from '@chakra-ui/react'
+import { Text, Box, Grid, GridItem, Tab, TabList, TabPanels, TabPanel, Tabs } from '@chakra-ui/react'
 
 const Product: React.VFC = () => {
   return (
@@ -15,31 +15,45 @@ const Product: React.VFC = () => {
           はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。
         </Text>
       </Box>
-
-      <Grid
-        px={[0, 0, 10]}
-        py={[10, 10, 5]}
-        templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
-      >
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-        <GridItem>
-          <ProductCard product={products[0]} />
-        </GridItem>
-      </Grid>
+      <Box p={7}>
+        <Tabs>
+          <TabList>
+            <Tab color={'gray.100'}>GOLD LINE</Tab>
+            <Tab color={'gray.100'}>BEST SELECT</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Grid
+                px={[0, 0, 10]}
+                py={[10, 10, 5]}
+                templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
+              >
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+              </Grid>
+            </TabPanel>
+            <TabPanel>
+              <Text color={'gray.100'}>Best SELECTラインナップ</Text>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
     </Box>
   )
 }
