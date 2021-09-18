@@ -6,11 +6,16 @@ type Props = {
     model: string
     imageUrl: string
     discription: string
+    length: number
+    colors: {
+      label: string
+      colorCode: string
+    }[]
   }
 }
 
 const ProductCard: React.VFC<Props> = ({ product }) => {
-  const { model, imageUrl, discription } = product
+  const { model, imageUrl, discription, length, colors } = product
   return (
     <Box
       my={3}
@@ -31,8 +36,8 @@ const ProductCard: React.VFC<Props> = ({ product }) => {
         {discription}
       </Text>
       <Box pt={1} px={5}>
-        <Text mr={2}>長さ：約27cm</Text>
-        <Text>Color：ブラック, オレンジ</Text>
+        <Text mr={2}>長さ：約{length}cm</Text>
+        <Text>Color：{colors.map((color) => `${color.label} `)}</Text>
       </Box>
     </Box>
   )
