@@ -8,24 +8,29 @@ const Product: React.VFC = () => {
     <Box minHeight={'100vh'}>
       <SubHeader title={'製品ラインナップ'} />
       <Box mx={[5, 5, 10]} my={5}>
-        <Text px={[5, 5, 10]} fontSize={14} color={'gray.100'}>
+        <Text px={[5, 0, 10]} fontSize={14} color={'gray.100'}>
           エールストーリー はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。エールストーリー
           はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。エールストーリー
           はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。エールストーリー
           はこんな素材を使用しています。エールストーリー はこんな素材を使用しています。
         </Text>
       </Box>
-      <Box p={7}>
+      <Box p={[0, 0, 0, 5]}>
         <Tabs>
           <TabList>
-            <Tab color={'gray.100'}>GOLD LINE</Tab>
-            <Tab color={'gray.100'}>BEST SELECT</Tab>
+            <Tab _selected={{ bg: 'gray.100', color: 'blue.500', fontWeight: 'bold' }} color={'white'}>
+              GOLD LINE
+            </Tab>
+            <Tab _selected={{ bg: 'gray.100', color: 'blue.500', fontWeight: 'bold' }} color={'white'}>
+              BEST SELECT
+            </Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
+              <Text color={'gray.100'}>GOLD LINEラインナップ</Text>
               <Grid
-                px={[0, 0, 10]}
-                py={[10, 10, 5]}
+                // px={[0, 0, 10]}
+                py={[5, 5, 5]}
                 templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
               >
                 <GridItem>
@@ -49,7 +54,22 @@ const Product: React.VFC = () => {
               </Grid>
             </TabPanel>
             <TabPanel>
-              <Text color={'gray.100'}>Best SELECTラインナップ</Text>
+              <Text color={'gray.100'}>BEST SELECTラインナップ</Text>
+              <Grid
+                // px={[0, 0, 10]}
+                py={[5, 5, 5]}
+                templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(3,1fr)']}
+              >
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+                <GridItem>
+                  <ProductCard product={products[0]} />
+                </GridItem>
+              </Grid>
             </TabPanel>
           </TabPanels>
         </Tabs>
